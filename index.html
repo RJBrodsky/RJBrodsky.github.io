@@ -1,16 +1,33 @@
 <style>
-.centered {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0 auto;
+.container {
+    display: table;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+.helper {
+    #position: absolute;
+    #top: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.content {
+    #position: relative;
+    #top: -50%;
+    margin: 0 auto;
+    width: 200px;
+    border: 1px solid orange;
 }
 </style>
 <html>
   <body>
-    <div class="centered">
-      <img alt="" src="http://lorempixel.com/100/100/people/9/">
-    </div>
+    <div class="container">
+        <div class="helper">
+            <div class="content">
+                 <img alt="" src="http://lorempixel.com/100/100/people/9/">
+            </div>
+        </div>
+    </div
   </body>
 </html>
-
